@@ -1,8 +1,21 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-/***    comment:               **/
-int main()
-{
+int main(){
+    int n;
+    while(cin >> n  && n != 0){
+        int former = 0, next, total = 0;
+        for(int i = 0; i < n; i++){
+            cin >> next;
+            if(former < next){
+                total += (next-former)*6+5;
+            }else if(former > next){
+                total += (former-next)*4+5;
+            }else{total += 5;}
+            former = next;
 
+        }
+        cout << total << endl;
+    }
     return 0;
 }
