@@ -7,7 +7,7 @@ typedef struct DataNode
 {
 	int cmd;
 	char descpt[DESC_LEN];
-    struct DataNode* next;
+  struct DataNode* next;
 } tDataNode;
 
 int main()
