@@ -12,7 +12,7 @@ typedef struct DataNode
 
 int main()
 {
-  tDataNode *head = NULL;
+	tDataNode *head = NULL;
 	tDataNode *p = NULL;
 	int i;	
 	/* Init Command List */
